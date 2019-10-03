@@ -17,6 +17,8 @@ use Xethron\MigrationsGenerator\Syntax\RemoveForeignKeysFromTable;
 
 use Illuminate\Contracts\Config\Repository as Config;
 
+use Illuminate\Support\Str;
+
 class MigrateGenerateCommand extends GeneratorCommand {
 
 	/**
@@ -324,7 +326,7 @@ class MigrateGenerateCommand extends GeneratorCommand {
 		}
 
 		return [
-			'CLASS' => ucwords(camel_case($this->migrationName)),
+			'CLASS' => ucwords(Str::camel($this->migrationName)),
 			'UP'    => $up,
 			'DOWN'  => $down
 		];

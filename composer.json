@@ -18,7 +18,7 @@
 	"require": {
 		"php": ">=5.4.0",
 		"illuminate/support": "^6.0",
-		"xethron/laravel-4-generators": "feature/laravel-six-stable",
+		"xethron/laravel-4-generators": "dev-laravel-6",
 		"doctrine/dbal": "~2.4"
 	},
 	"autoload": {
